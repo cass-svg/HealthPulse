@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultations — HealthPulse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="list.html" class="brand">HealthPulse</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Patients</a></li>
+          <li><a href="list.html" class="active">Consultations</a></li>
+          <li><a href="#">Inventory</a></li>
+          <li><a href="#">Barangays</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Consultations</h1>
+      <a href="form.html" class="btn btn-primary">+ Log Consultation</a>
+    </div>
+
+    <form class="toolbar" action="list.html" method="get">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search by patient name, barangay, or diagnosis..."
+        aria-label="Search consultations"
+      >
+      <button type="submit" class="btn btn-secondary">Search</button>
+    </form>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Patient</th>
+            <th>Barangay</th>
+            <th>Diagnosis</th>
+            <th>Attendant BHW</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="ID">101</td>
+            <td data-label="Date">2026-11-18</td>
+            <td data-label="Patient">Dela Cruz, Maria</td>
+            <td data-label="Barangay">San Isidro</td>
+            <td data-label="Diagnosis">Acute Upper Respiratory Tract Infection</td>
+            <td data-label="Attendant BHW">BHW Elena Ramos</td>
+            <td data-label="Actions">
+              <div class="action-group">
+                <a href="form.html" class="btn btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="ID">102</td>
+            <td data-label="Date">2026-11-18</td>
+            <td data-label="Patient">Bautista, Jose</td>
+            <td data-label="Barangay">Santa Maria</td>
+            <td data-label="Diagnosis">Essential Hypertension (Follow-up)</td>
+            <td data-label="Attendant BHW">BHW Carlo Mendoza</td>
+            <td data-label="Actions">
+              <div class="action-group">
+                <a href="form.html" class="btn btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="ID">103</td>
+            <td data-label="Date">2026-11-19</td>
+            <td data-label="Patient">Reyes, Angela</td>
+            <td data-label="Barangay">San Roque</td>
+            <td data-label="Diagnosis">Prenatal Checkup — 2nd Trimester</td>
+            <td data-label="Attendant BHW">BHW Elena Ramos</td>
+            <td data-label="Actions">
+              <div class="action-group">
+                <a href="form.html" class="btn btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="ID">104</td>
+            <td data-label="Date">2026-11-20</td>
+            <td data-label="Patient">Navarro, Mateo</td>
+            <td data-label="Barangay">Burabod</td>
+            <td data-label="Diagnosis">Acute Gastroenteritis (Mild Dehydration)</td>
+            <td data-label="Attendant BHW">BHW Lorna Valencia</td>
+            <td data-label="Actions">
+              <div class="action-group">
+                <a href="form.html" class="btn btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="ID">105</td>
+            <td data-label="Date">2026-11-21</td>
+            <td data-label="Patient">Villanueva, Rosa</td>
+            <td data-label="Barangay">San Isidro</td>
+            <td data-label="Diagnosis">Tension Headache &amp; Fatigue</td>
+            <td data-label="Attendant BHW">BHW Carlo Mendoza</td>
+            <td data-label="Actions">
+              <div class="action-group">
+                <a href="form.html" class="btn btn-secondary btn-sm">Edit</a>
+                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+</html>
