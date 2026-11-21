@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Consultation — HealthPulse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="list.html" class="brand">HealthPulse</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Patients</a></li>
+          <li><a href="list.html" class="active">Consultations</a></li>
+          <li><a href="#">Inventory</a></li>
+          <li><a href="#">Barangays</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="form-card">
+      <div class="page-header">
+        <h1>Log Consultation</h1>
+        <a href="list.html" class="btn btn-secondary">Back to List</a>
+      </div>
+
+      <div class="card">
+        <form action="list.html" method="post">
+          <div class="form-group">
+            <label for="patient_id">Patient <span class="required-mark">*</span></label>
+            <select id="patient_id" name="patient_id" required>
+              <option value="">-- Select Patient --</option>
+              <option value="1">Dela Cruz, Maria</option>
+              <option value="2">Bautista, Jose</option>
+              <option value="3">Reyes, Angela</option>
+              <option value="4">Navarro, Mateo</option>
+              <option value="5">Villanueva, Rosa</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="barangay_id">Barangay <span class="required-mark">*</span></label>
+            <select id="barangay_id" name="barangay_id" required>
+              <option value="">-- Select Barangay --</option>
+              <option value="1">San Isidro</option>
+              <option value="2">Santa Maria</option>
+              <option value="3">San Roque</option>
+              <option value="4">Burabod</option>
+              <option value="5">Dahilig</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="consult_date">Consultation Date <span class="required-mark">*</span></label>
+            <input type="date" id="consult_date" name="consult_date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="attendant_bhw">Attendant BHW <span class="required-mark">*</span></label>
+            <input
+              type="text"
+              id="attendant_bhw"
+              name="attendant_bhw"
+              placeholder="e.g., BHW Elena Ramos"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="diagnosis">Diagnosis / Clinical Notes <span class="required-mark">*</span></label>
+            <textarea
+              id="diagnosis"
+              name="diagnosis"
+              rows="4"
+              placeholder="Enter chief complaint, vital signs, and diagnosis..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save Consultation</button>
+            <a href="list.html" class="btn btn-secondary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
